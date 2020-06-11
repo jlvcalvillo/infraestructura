@@ -1,0 +1,10 @@
+.card {
+    width: 742px;
+    margin: 16px;
+    text-align: center;
+}
+
+.row app-circle-progress {
+    display: inline-block;
+    margin-left: 15px;
+}

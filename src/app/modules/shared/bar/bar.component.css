@@ -1,0 +1,15 @@
+.content-bar {
+    width: auto;
+    background-color: #ddd9d9;
+    border-radius: 9px;
+}
+
+.bar {
+    height: 14px;
+    border-radius: 9px;
+}
+
+:host {
+    display: block;
+    height: 100%;
+}

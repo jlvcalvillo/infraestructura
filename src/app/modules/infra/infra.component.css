@@ -1,0 +1,40 @@
+.header {
+    overflow: auto;
+    height: 200px;
+}
+
+.imagenes {
+    float: left;
+}
+
+#img_header1 {
+    position: relative;
+    margin-top: -45px;
+    margin-left: -70px;
+}
+
+#img_header2 {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    margin-top: -25px;
+    margin-left: -50px;
+}
+
+.title {
+    float: left;
+    width: 400px;
+    margin-left: 150px;
+}
+
+h1 {
+    font-size: 44px;
+    margin-bottom: 0px;
+    color: #838B89;
+}
+
+h2 {
+    font-size: 28px;
+    margin-top: 11px;
+    color: #006259;
+}

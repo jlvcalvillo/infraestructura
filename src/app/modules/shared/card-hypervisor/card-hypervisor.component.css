@@ -1,0 +1,22 @@
+.card {
+    width: 300px;
+    margin: 16px;
+    text-align: center;
+}
+
+.element {
+    margin-top: 16px;
+}
+
+.title-indicador {
+    overflow: auto;
+    margin-bottom: 4px;
+}
+
+.indicador {
+    float: left;
+}
+
+.percent {
+    float: right;
+}
