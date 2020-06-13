@@ -1,7 +1,4 @@
-.card {
-    width: 400px;
-    margin: 16px;
-}
+
 
 .card_title {
     overflow: auto;
@@ -9,6 +6,7 @@
 
 .text_title {
     float: left;
+
 }
 
 .percent {

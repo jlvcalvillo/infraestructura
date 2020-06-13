@@ -1,31 +1,34 @@
-<div class="card">
-    <div class="card-content">
-        <div class="card-title">
-            <h5>{{ cardHypervisor.name }}</h5>
-        </div>
-        <div class="card-body">
-            <div class="element">
-                <div class="title-indicador">
-                    <p class="indicador"><b>CPU: </b><span>{{ cardHypervisor.cpu_all }}/{{ cardHypervisor.cpu_used }}</span></p>
-                    <p class="percent">{{percentCpu | number:'2.0-1'}}%</p>
+    <div class="col s12 m6 l3">
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title">
+                    <h5>{{ cardHypervisor.name }}</h5>
                 </div>
-                <app-bar [value]='percentCpu'></app-bar>
-            </div>
-            <div class="element">
-                <div class="title-indicador">
-                    <p class="indicador"><b>RAM: </b><span>{{ cardHypervisor.cpu_all }}/{{ cardHypervisor.cpu_used }}</span></p>
-                    <p class="percent">{{percentRam | number:'2.0-1'}}%</p>
+                <div class="card-body">
+                    <div class="element">
+                        <div class="title-indicador">
+                            <p class="indicador"><b>CPU: </b><span>{{ cardHypervisor.cpu_all }}/{{ cardHypervisor.cpu_used }}</span></p>
+                            <p class="percent">{{percentCpu | number:'2.0-1'}}%</p>
+                        </div>
+                        <app-bar [value]='percentCpu'></app-bar>
+                    </div>
+                    <div class="element">
+                        <div class="title-indicador">
+                            <p class="indicador"><b>RAM: </b><span>{{ cardHypervisor.cpu_all }}/{{ cardHypervisor.cpu_used }}</span></p>
+                            <p class="percent">{{percentRam | number:'2.0-1'}}%</p>
+                        </div>
+                        <app-bar [value]='percentRam'></app-bar>
+                    </div>
+                    <div class="element">
+                        <div class="title-indicador">
+                            <p class="indicador"><b>HD: </b><span>{{ cardHypervisor.cpu_all }}/{{ cardHypervisor.cpu_used }}</span></p>
+                            <p class="percent">{{percentHd | number:'2.0-1'}}%</p>
+                        </div>
+                        <app-bar [value]='percentHd'></app-bar>
+                    </div>
+        
                 </div>
-                <app-bar [value]='percentRam'></app-bar>
             </div>
-            <div class="element">
-                <div class="title-indicador">
-                    <p class="indicador"><b>HD: </b><span>{{ cardHypervisor.cpu_all }}/{{ cardHypervisor.cpu_used }}</span></p>
-                    <p class="percent">{{percentHd | number:'2.0-1'}}%</p>
-                </div>
-                <app-bar [value]='percentHd'></app-bar>
-            </div>
-
         </div>
     </div>
-</div>
+

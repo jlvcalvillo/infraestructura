@@ -1,17 +1,29 @@
-<div class="header">
-    <div class="imagenes">
-        <img id="img_header1" src="../../../assets/img/img-head1.png" alt="" width="300px">
-        <img id="img_header2" src="../../../assets/img/img-head2.png" alt="" width="330px">
-    </div>
-    <div class="title">
-        <h1>Banca Digital</h1>
-        <h2>Infraestructura</h2>
+<div class="row">
+    <div class="header">
+        <div class="col s12 m6 l3">
+            <div class="imagenes">
+                <img id="img_header1" src="../../../assets/img/img-head1.png" alt="" width="300px">
+                <img id="img_header2" src="../../../assets/img/img-head2.png" alt="" width="330px">
+            </div>
+        </div>
+        <div class="col s12 m6 l4">
+            <div class="title">
+                <h1>Banca Digital</h1>
+                <h2>Infraestructura</h2>
+            </div>
+        </div>
     </div>
 </div>
 <div class="body">
 
-    <app-card-infra></app-card-infra>
-    <app-card-hypervisor></app-card-hypervisor>
-    <app-card-shard></app-card-shard>
+    <div class="row">
+        <app-card-infra></app-card-infra>
+    </div>
+    <div class="row">
+        <app-card-hypervisor></app-card-hypervisor>
+    </div>
+    <div class="row">
+        <app-card-shard></app-card-shard>
+    </div>
 
 </div>

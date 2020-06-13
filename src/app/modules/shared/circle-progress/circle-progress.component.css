@@ -1,6 +1,6 @@
 .circle-progress {
-    width: 120px;
-    height: 120px;
+    width: 9em;
+    height: 9em;
 }
 
 .box {
@@ -13,8 +13,8 @@
 
 svg {
     position: relative;
-    width: 120px;
-    height: 120px;
+    width: 9em;
+    height: 9em;
 }
 
 svg circle {
@@ -33,8 +33,6 @@ svg circle:nth-child(1) {
     stroke-dashoffset: 0;
     stroke: #ddd9d9;
 }
-
-svg circle:nth-child(2) {}
 
 .number {
     position: absolute;

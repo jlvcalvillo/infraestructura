@@ -1,14 +1,9 @@
-.header {
-    overflow: auto;
+.imagenes {
+    float: left;
     height: 200px;
 }
 
-.imagenes {
-    float: left;
-}
-
 #img_header1 {
-    position: relative;
     margin-top: -45px;
     margin-left: -70px;
 }
@@ -24,7 +19,7 @@
 .title {
     float: left;
     width: 400px;
-    margin-left: 150px;
+    height: 100px;
 }
 
 h1 {
