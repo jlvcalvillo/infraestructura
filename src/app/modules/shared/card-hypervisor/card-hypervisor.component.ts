@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { CardHypervisor } from '../../../models/card-hypervisor';
 
 @Component({
@@ -8,7 +8,9 @@ import { CardHypervisor } from '../../../models/card-hypervisor';
 })
 export class CardHypervisorComponent implements OnInit {
 
+  @Input()
   cardHypervisor:CardHypervisor;
+
   percentCpu:number;
   percentRam:number;
   percentHd:number;
@@ -16,20 +18,9 @@ export class CardHypervisorComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    this.cardHypervisor = {
-      name: 'Hypervisor 1',
-      cpu_all: 150,
-      cpu_used:144,
-      ram_all:600,
-      ram_used:512,
-      hd_all:1500,
-      hd_used:1150
-    };
-
     this.percentCpu = (this.cardHypervisor.cpu_used * 100) / this.cardHypervisor.cpu_all;
     this.percentRam = (this.cardHypervisor.ram_used * 100) / this.cardHypervisor.ram_all;
     this.percentHd = (this.cardHypervisor.hd_used * 100) / this.cardHypervisor.hd_all;
-
   }
 
 }

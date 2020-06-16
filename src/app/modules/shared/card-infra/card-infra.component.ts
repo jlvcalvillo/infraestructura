@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { CardInfra } from '../../../models/card-infra';
 
 @Component({
@@ -8,15 +8,10 @@ import { CardInfra } from '../../../models/card-infra';
 })
 export class CardInfraComponent implements OnInit {
 
+  @Input()
   cardInfra:CardInfra;
 
-  constructor() {
-    this.cardInfra = {
-      id: 1,
-      name: 'Servicios CORE',
-      percentage: 70
-    };
-   }
+  constructor() {}
 
   ngOnInit() {
   }

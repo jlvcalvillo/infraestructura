@@ -1,0 +1,19 @@
+<div class="card">
+    <div class="card-body">
+        <div class="row">
+            <table class="centered">
+                <thead>
+                    <tr>
+                        <th>{{ cardStorage.name }}</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let element of cardStorage.elements">
+                        <td>{{ element.name }}</td>
+                        <td>{{ element.value }}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

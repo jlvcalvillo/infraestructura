@@ -1,0 +1,49 @@
+<div class="row">
+    <div class="header">
+        <div class="col s12 m6 l3">
+            <div class="imagenes">
+                <img id="img_header1" src="../../../assets/img/img-head1.png" alt="" width="300px">
+                <img id="img_header2" src="../../../assets/img/img-head2.png" alt="" width="330px">
+            </div>
+        </div>
+        <div class="col s12 m6 l4">
+            <div class="title">
+                <h1>Banca Digital</h1>
+                <h2>{{ infra.name }}</h2>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="body">
+    <div class="row">
+        <div class="col s12 m6 l9">
+            <h3>Equipos</h3>
+            <div class="wrapper-hyper">
+                <app-card-hypervisor class="box" *ngFor="let item of hypervisors" [cardHypervisor]="item"></app-card-hypervisor>
+            </div>
+        </div>
+        <div class="col s12 m6 l3">
+            <h3>Storage</h3>
+            <div class="wrapper-shard">
+                <app-card-storage *ngFor="let storage of storages" [cardStorage]="storage"></app-card-storage>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col s12 m6 l5">
+            <h3>Base de datos</h3>
+            <div class="col s12 m6 l8">
+                <div class="wrapper-shard">
+                    <app-card-storage *ngFor="let db of dataBases" [cardStorage]="db"></app-card-storage>
+                </div>
+            </div>
+        </div>
+        <div class="col s12 m6 l7">
+            <h3>Shards</h3>
+            <div class="wrapper-shard">
+                <app-card-shard *ngFor="let shard of shards" [cardShard]="shard"></app-card-shard>
+            </div>
+        </div>
+    </div>
+
+</div>

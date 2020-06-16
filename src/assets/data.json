@@ -1,0 +1,66 @@
+{
+    "infra": [{
+            "id": 1,
+            "name": "Servicios CORE",
+            "percentage": 70
+        },
+        {
+            "id": 2,
+            "name": "eBanking",
+            "percentage": 70
+        },
+        {
+            "id": 3,
+            "name": "DevOPS",
+            "percentage": 100
+        },
+        {
+            "id": 4,
+            "name": "Alnova 1",
+            "percentage": 90
+        },
+        {
+            "id": 5,
+            "name": "Alnova 2",
+            "percentage": 65
+        }
+    ],
+    "storage": [{
+        "id_infra": 1,
+        "data": [{
+                "id": 1,
+                "name": "XtremIO",
+                "elements": [{
+                        "name": "Garantía",
+                        "value": "13-Dic-2020"
+                    },
+                    {
+                        "name": "Capacidad",
+                        "value": "10TB"
+                    },
+                    {
+                        "name": "Usable",
+                        "value": "9.9TB"
+                    }
+                ]
+            },
+            {
+                "id": 2,
+                "name": "Unity 550 F",
+                "elements": [{
+                        "name": "Garantía",
+                        "value": "04-Mar-2023"
+                    },
+                    {
+                        "name": "Capacidad",
+                        "value": "12TB"
+                    },
+                    {
+                        "name": "Usable",
+                        "value": "11.5TB"
+                    }
+                ]
+            }
+        ]
+    }]
+}

@@ -1,14 +1,15 @@
-
-
 .card_title {
     overflow: auto;
 }
 
 .text_title {
     float: left;
-
 }
 
 .percent {
     float: right;
+}
+
+a {
+    color: #006259 !important;
 }

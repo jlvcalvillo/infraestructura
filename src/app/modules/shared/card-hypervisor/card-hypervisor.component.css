@@ -1,5 +1,19 @@
-.card-title {
+.element_title {
+    float: left;
     text-align: center;
+}
+
+#img_title {
+    width: 30%;
+    height: 100px;
+}
+
+#text_title {
+    width: 40%;
+}
+
+#model_title {
+    width: 30%;
 }
 
 .element {

@@ -19,5 +19,8 @@
     margin: 0px;
     padding: 0px;
     font-family: Poppins-Light;
-    background-color: F7FBF9;
+}
+
+body {
+    background-color: #f6f6f8;
 }

@@ -1,12 +1,14 @@
-    <div class="col s12 m6 l4">
-        <div class="card">
-            <div class="card-content">
-                <div class="card_title">
-                    <h5 class="text_title">{{cardInfra.name}}</h5>
-                    <h5 class="percent">{{cardInfra.percentage}}%</h5>
-                </div>
-                <app-bar [value]='cardInfra.percentage'></app-bar>
+<div class="col s12 m6 l4">
+    <div class="card">
+        <div class="card-content">
+            <div class="card_title">
+                <h5 class="text_title">{{cardInfra.name}}</h5>
+                <h5 class="percent">{{cardInfra.percentage}}%</h5>
             </div>
+            <app-bar [value]='cardInfra.percentage'></app-bar>
+        </div>
+        <div class="card-action">
+            <a [routerLink]="['/infra/dashboard', cardInfra.id]">Ver más</a>
         </div>
     </div>
-    
+</div>

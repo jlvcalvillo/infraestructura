@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { CardShard } from 'src/app/models/card-shard';
 
 @Component({
@@ -8,18 +8,10 @@ import { CardShard } from 'src/app/models/card-shard';
 })
 export class CardShardComponent implements OnInit {
 
+  @Input()
   cardShard:CardShard;
 
-  constructor() {
-    this.cardShard = {
-      name:'Shard uno',
-      shard1:20,
-      shard2:40,
-      shard3:60,
-      shard4:80,
-      shard5:100
-    };
-  }
+  constructor() {}
 
   ngOnInit() {
   }

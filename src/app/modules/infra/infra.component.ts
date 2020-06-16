@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { InfraService } from 'src/app/services/infra.service';
+import { CardInfra } from '../../models/card-infra';
+
 
 @Component({
   selector: 'app-infra',
@@ -7,9 +10,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class InfraComponent implements OnInit {
 
-  constructor() { }
+  infra:CardInfra[];
+
+  constructor( private infraService:InfraService ) { }
 
   ngOnInit() {
+    this.infra = this.infraService.getInfra();
   }
 
 }

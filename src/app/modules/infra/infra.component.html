@@ -17,13 +17,7 @@
 <div class="body">
 
     <div class="row">
-        <app-card-infra></app-card-infra>
-    </div>
-    <div class="row">
-        <app-card-hypervisor></app-card-hypervisor>
-    </div>
-    <div class="row">
-        <app-card-shard></app-card-shard>
+        <app-card-infra *ngFor="let item of infra" [cardInfra]="item"></app-card-infra>
     </div>
 
 </div>

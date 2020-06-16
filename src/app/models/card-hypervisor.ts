@@ -1,5 +1,8 @@
 export interface CardHypervisor {
+    id:number;
     name:string;
+    mark:string;
+    model:string;
     cpu_all:number;
     cpu_used:number;
     ram_all:number;
