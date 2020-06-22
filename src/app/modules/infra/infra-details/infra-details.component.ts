@@ -31,14 +31,13 @@ export class InfraDetailsComponent implements OnInit {
 
   ngOnInit() {
     this.id = this.activatedRoute.snapshot.params.id;
-    //this.infra = this.infraService.getInfraIndex(this.id);
-    console.log(this.infraService.getStorageById(this.id));
-
+    this.infra = this.infraService.getInfraById(this.id);
+    this.storages = this.storageService.getStorage();
     this.hypervisors = this.hypervisorService.getHypervisors();
     this.dataBases = this.storageService.getDataBase();
     this.shards = this.shardService.getShards();
   }
 
-  
+
 
 }

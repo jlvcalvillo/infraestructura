@@ -1,30 +1,48 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from "@angular/common/http";
-
-import  data from "../../assets/data.json";
-import { element } from 'protractor';
-import { CardStorage } from '../models/card-storage';
+import { CardInfra } from '../models/card-infra';
 
 @Injectable({
   providedIn: 'root'
 })
 export class InfraService {
 
+  data:CardInfra[] = [{
+    "id": 1,
+    "name": "Servicios CORE",
+    "percentage": 70
+},
+{
+    "id": 2,
+    "name": "eBanking",
+    "percentage": 70
+},
+{
+    "id": 3,
+    "name": "DevOPS",
+    "percentage": 100
+},
+{
+    "id": 4,
+    "name": "Alnova 1",
+    "percentage": 90
+},
+{
+    "id": 5,
+    "name": "Alnova 2",
+    "percentage": 65
+}
+];
+
   constructor(private http:HttpClient) {}
 
-  getData() {
-    return data;
-  }
-
   getInfra() {
-    return data.infra;
+    return this.data;
   }
 
-  getStorageById(id_infra:number) {
-    return data.storage.find((element) => {element.id_infra == id_infra});
+  getInfraById(index:number) {
+    return this.data.find((element) => {
+      element.id == index
+    });
   }
 }
-
-
-//https://medium.com/@luukgruijs/understanding-creating-and-subscribing-to-observables-in-angular-426dbf0b04a3
-//https://blog.maestriajs.com/blog/tips/data-sharing-in-multi-view/

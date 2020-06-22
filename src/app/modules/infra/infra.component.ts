@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { InfraService } from 'src/app/services/infra.service';
 import { CardInfra } from '../../models/card-infra';
+import { Observable } from 'rxjs';
 
 
 @Component({
