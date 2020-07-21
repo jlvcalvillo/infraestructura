@@ -8,7 +8,18 @@
             <app-bar [value]='cardInfra.percentage'></app-bar>
         </div>
         <div class="card-action">
-            <a [routerLink]="['/infra/dashboard', cardInfra.id]">Ver más</a>
+            <div class="elements">
+                <a class="view-more" [routerLink]="['/infra/dashboard', cardInfra.id]">Ver más</a>
+                <div class="options">
+                    <a class="waves-effect waves-light btn modal-trigger delete" href="#delete-infra"><i class="far fa-trash-alt"></i> Eliminar</a>
+                    <a class="waves-effect waves-light btn edit"><i class="far fa-edit"></i> Editar</a>
+                </div>
+            </div>
+            
         </div>
     </div>
+</div>
+
+<div id="delete-infra" class="modal" materialize="modal" [materializeParams]="[{dismissible:false}]">
+    <app-delete-infra [item]="item"></app-delete-infra>
 </div>

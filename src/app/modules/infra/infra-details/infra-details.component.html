@@ -9,7 +9,7 @@
         <div class="col s12 m6 l4">
             <div class="title">
                 <h1>Banca Digital</h1>
-                <h2>{{ infra.name }}</h2>
+                <h2>{{ infra != undefined ? infra.name : ""}}</h2>
             </div>
         </div>
     </div>
@@ -19,7 +19,8 @@
         <div class="col s12 m6 l9">
             <h3>Equipos</h3>
             <div class="wrapper-hyper">
-                <app-card-hypervisor class="box" *ngFor="let item of hypervisors" [cardHypervisor]="item"></app-card-hypervisor>
+                <app-card-hypervisor class="box" *ngFor="let item of hypervisors" [cardHypervisor]="item">
+                </app-card-hypervisor>
             </div>
         </div>
         <div class="col s12 m6 l3">
@@ -46,4 +47,18 @@
         </div>
     </div>
 
+</div>
+
+
+<!-- Modal Trigger -->
+<a class="waves-effect waves-light btn modal-trigger" href="#modal1">Modal</a>
+<!-- Modal Structure -->
+<div id="modal1" class="modal" materialize="modal" [materializeParams]="[{dismissible:false}]">
+    <div class="modal-content">
+        <h4>Modal Header</h4>
+        <p>A bunch of text</p>
+    </div>
+    <div class="modal-footer">
+        <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+    </div>
 </div>

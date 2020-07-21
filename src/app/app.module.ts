@@ -5,8 +5,10 @@ import { AppRoutingModule } from './app-routing.module';
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { HttpClientModule } from '@angular/common/http';
 
+
 //components
 import { AppComponent } from './app.component';
+import { from } from 'rxjs';
 
 
 @NgModule({

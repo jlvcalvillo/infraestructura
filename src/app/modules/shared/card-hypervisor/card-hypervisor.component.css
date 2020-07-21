@@ -10,6 +10,11 @@
 
 #text_title {
     width: 40%;
+    
+}
+
+.text_title {
+    font-size: 70%;
 }
 
 #model_title {

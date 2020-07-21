@@ -9,6 +9,8 @@ import { CardStorage } from '../../../models/card-storage';
 import { ShardService } from '../../../services/shard.service';
 import { CardShard } from '../../../models/card-shard';
 
+declare var $: any
+
 @Component({
   selector: 'app-infra-details',
   templateUrl: './infra-details.component.html',
@@ -22,12 +24,14 @@ export class InfraDetailsComponent implements OnInit {
   storages:CardStorage[];
   dataBases:CardStorage[];
   shards:CardShard[];
-
+  
   constructor(private activatedRoute:ActivatedRoute,
               private infraService:InfraService,
               private hypervisorService:HypervisorService,
               private storageService:StorageService,
-              private shardService:ShardService) { }
+              private shardService:ShardService) { 
+                $(".modal").modal();
+  }
 
   ngOnInit() {
     this.id = this.activatedRoute.snapshot.params.id;
@@ -36,8 +40,7 @@ export class InfraDetailsComponent implements OnInit {
     this.hypervisors = this.hypervisorService.getHypervisors();
     this.dataBases = this.storageService.getDataBase();
     this.shards = this.shardService.getShards();
+
   }
-
-
 
 }

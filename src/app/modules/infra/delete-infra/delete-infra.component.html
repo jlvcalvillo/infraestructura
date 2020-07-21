@@ -1,0 +1,10 @@
+<div class="modal-content">
+    <div class="modal-content">
+        <h4>¿Estas seguro de eliminar la infraestructura?</h4>
+        <p>Al eliminar la infraestructura, se elimina todo su contenido y ya no se puede recuperar</p>
+    </div>
+        <div class="form-group mx-auto">
+            <a type="submit" class="waves-effect waves-light btn" (click)="deleteInfra()">Si, eliminar</a>
+            <a [routerLink]="[item.urlDestiny]" class=" modal-action modal-close waves-effect waves-green btn-flat">Cancelar</a>
+        </div>
+</div>

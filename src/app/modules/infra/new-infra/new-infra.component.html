@@ -1,0 +1,19 @@
+<div class="modal-content">
+    <h4>Agregar infraestructura</h4>
+    <form [formGroup]="newInfra" (ngSubmit)="onSubmit()">
+        <div class="modal-content">
+            <div class="form-group mx-auto">
+                <label for="name">Nombre</label>
+                <input type="text" class="form-control" id="name" formControlName="name">
+            </div>
+            <div class="form-group mx-auto">
+                <label for="percent">Porcentaje</label>
+                <input type="number" class="form-control" id="percent" formControlName="percent">
+            </div>
+        </div>
+        <div class="form-group mx-auto">
+            <input type="submit" class="waves-effect waves-light btn" value="Guardar" />
+            <a [routerLink]="[urlDestiny]" class=" modal-action modal-close waves-effect waves-green btn-flat">Cancelar</a>
+        </div>
+    </form>
+</div>

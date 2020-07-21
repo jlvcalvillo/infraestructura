@@ -10,14 +10,14 @@ export class ShardService {
     {
       name:'Shard uno',
       shard1:16,
-      shard2:16,
-      shard3:16,
-      shard4:16,
-      shard5:16
+      shard2:56,
+      shard3:76,
+      shard4:86,
+      shard5:96
     },
     {
       name:'Shard dos',
-      shard1:53,
+      shard1:3,
       shard2:53,
       shard3:53,
       shard4:53,

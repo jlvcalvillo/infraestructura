@@ -15,9 +15,15 @@
     </div>
 </div>
 <div class="body">
-
+    <div class="col s12 m6 l4">
+        <a class="waves-effect waves-light btn modal-trigger btn-modal" href="#add-infra">Agregar Infraestructura</a>
+    </div>
     <div class="row">
-        <app-card-infra *ngFor=" let item of infra " [cardInfra]="item "></app-card-infra>
+        <app-card-infra *ngFor=" let item of infra " [cardInfra]="item"></app-card-infra>
     </div>
 
+</div>
+
+<div id="add-infra" class="modal" materialize="modal" [materializeParams]="[{dismissible:false}]">
+    <app-new-infra [urlDestiny]="urlDestiny"></app-new-infra>
 </div>
